@@ -1,8 +1,12 @@
 import React from "react";
-import { View } from "react-native";
+import { Text, View } from "react-native";
 
 const Chat = () => {
-  return <View>Chat</View>;
+  return (
+    <View>
+      <Text>Chat</Text>
+    </View>
+  );
 };
 
 export default Chat;

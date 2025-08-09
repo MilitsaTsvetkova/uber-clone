@@ -1,8 +1,12 @@
 import React from "react";
-import { View } from "react-native";
+import { Text, View } from "react-native";
 
 const Rides = () => {
-  return <View>Rides</View>;
+  return (
+    <View>
+      <Text>Rides</Text>
+    </View>
+  );
 };
 
 export default Rides;
