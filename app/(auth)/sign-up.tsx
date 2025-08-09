@@ -26,13 +26,10 @@ const SignUp = () => {
 
   // Handle submission of sign-up form
   const onSignUpPress = async () => {
-    console.log("isLoaded:", isLoaded);
-    console.log("onSignUpPress called with form:", form);
     if (!isLoaded) return;
 
     // Start sign-up process using email and password provided
     try {
-      console.log("Starting sign-up process...");
       await signUp.create({
         emailAddress: form.email,
         password: form.password,

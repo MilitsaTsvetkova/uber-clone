@@ -11,9 +11,7 @@ const TabIcon = ({
   focused: boolean;
 }) => {
   return (
-    <View
-      className={`flex flex-row justify-center items-center rounded-full ${focused ? "bg-general-300" : ""}`}
-    >
+    <View className={`flex flex-row justify-center items-center rounded-full`}>
       <View
         className={`rounded-full w-12 h-12 items-center justify-center ${focused ? "bg-general-400" : ""}`}
       >
@@ -56,10 +54,10 @@ const Layout = () => {
         name="home"
         options={{
           title: "Home",
+          headerShown: false,
           tabBarIcon: ({ focused }) => (
             <TabIcon icon={icons.home} focused={focused} />
           ),
-          headerShown: false,
         }}
       />
       <Tabs.Screen
